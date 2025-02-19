@@ -13,6 +13,7 @@ const env = load({
 
 export const configSchema = z.object({
   SUI_PRIVATE_KEY: z.string(),
+  TARGET_CHAIN: z.literal("sui"),
 });
 
 export type Config = z.infer<typeof configSchema>;
