@@ -1,6 +1,5 @@
 import { getFullnodeUrl, SuiClient } from "@mysten/sui/client";
 import { Ed25519Keypair } from "@mysten/sui/keypairs/ed25519";
-import { fromHex } from "@mysten/sui/utils";
 
 /**
  * Sign and execute a Sui transaction
@@ -17,7 +16,7 @@ export const signAndExecuteSuiTransaction = async (
   console.log("Encoding calldata as bytes...");
   const bytes = Uint8Array.from(Buffer.from(calldata, "base64"));
   console.log("Generating keypair from private key...");
-  const keypair = Ed25519Keypair.fromSecretKey(fromHex(privateKey));
+  const keypair = Ed25519Keypair.fromSecretKey(privateKey);
   console.log("Signing transaction...");
   const { signature } = await keypair.signTransaction(bytes);
 
