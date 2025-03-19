@@ -15,8 +15,8 @@ SUI_PRIVATE_KEY=123
 
 - Add your calldata to `config/calldata.txt` in as a base64 string:
 ```
-AABGAAgAAAAAAAAAAAEBQlagPqBLFOFXI4dkAFp8D2yZkjEfJNBemWSAfeBwhCi30H0cAAAAAAAAIM2KSG0DEctFw/gsvY6ejtXuYwrev8My5gj5cYJ5ToJmAA8ObGlmaS1sb2NhbC1hcGkACAAAAAAAAAAAAAgAAAAAAAAAAAAKCW1heWFuTUNUUAArKjB4MWV...
-```
+AABGAAgAAAAAAAAAAAEBQlagPqBLFOFXI4dkAFp8D2yZkjEfJN...
+```git
 
 You should have the following structure:
 ```
